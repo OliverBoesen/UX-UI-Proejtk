@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Opskrifter</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="filter-buttons">
+    <button class="filter-btn" data-filter="vegansk"><img src="sun-4135784_1280.webp" alt="Vegansk"></button>
+    <button class="filter-btn" data-filter="spicy"><img src="sun-4135784_1280.webp" alt="Spicy"></button>
+    <button class="filter-btn" data-filter="fisk"><img src="sun-4135784_1280.webp" alt="Fisk"></button>
+    <button class="filter-btn" data-filter="hurtigt"><img src="sun-4135784_1280.webp" alt="Hurtigt"></button>
+    <button class="filter-btn" data-filter="fjerkrae"><img src="sun-4135784_1280.webp" alt="Fjerkræ"></button>
+    <button class="filter-btn" data-filter="koed"><img src="sun-4135784_1280.webp" alt="Kød"></button>
+    <button class="filter-btn" data-filter="gris"><img src="sun-4135784_1280.webp" alt="Gris"></button>
+    <button class="filter-btn" data-filter="populaere"><img src="sun-4135784_1280.webp" alt="Populære"></button>
+    <button class="reset-btn">Nulstil filtre</button>
+  </div>
+
+  <div class="selected-filters"></div>
+
+  <div class="recipe-container">
+    <!-- Her tilføjer du dine opskriftsbilleder, hver med passende data-attributes -->
+    <!-- VEGANSK -->
+    <div class="recipe" data-tags="vegansk hurtigt populære">
+      <img src="vegansk_hurtigt_populaere.jpg" alt="Vegansk Hurtig Populær Opskrift">
+    </div>
+    <div class="recipe" data-tags="vegansk fisk populære">
+      <img src="vegansk_fisk_populaere.jpg" alt="Vegansk Fisk Populær Opskrift">
+    </div>
+    <div class="recipe" data-tags="vegansk spicy koed">
+      <img src="vegansk_spicy_koed.jpg" alt="Vegansk Spicy Kød Opskrift">
+    </div>
+    <div class="recipe" data-tags="vegansk fjerkræ populære">
+      <img src="vegansk_fjerkræ_populaere.jpg" alt="Vegansk Fjerkræ Populær Opskrift">
+    </div>
+    
+    <!-- SPICY -->
+    <div class="recipe" data-tags="spicy fisk populære">
+      <img src="spicy_fisk_populaere.jpg" alt="Spicy Fisk Populær Opskrift">
+    </div>
+    <div class="recipe" data-tags="spicy hurtigt fisk">
+      <img src="spicy_hurtigt_fisk.jpg" alt="Spicy Hurtig Fisk Opskrift">
+    </div>
+    <div class="recipe" data-tags="spicy koed gris">
+      <img src="spicy_koed_gris.jpg" alt="Spicy Kød Gris Opskrift">
+    </div>
+    <div class="recipe" data-tags="spicy vegansk fjerkræ">
+      <img src="spicy_vegansk_fjerkræ.jpg" alt="Spicy Vegansk Fjerkræ Opskrift">
+    </div>
+
+    <!-- FISK -->
+    <div class="recipe" data-tags="fisk hurtigt populære">
+      <img src="fisk_hurtigt_populaere.jpg" alt="Fisk Hurtig Populær Opskrift">
+    </div>
+    <div class="recipe" data-tags="fisk vegansk gris">
+      <img src="fisk_vegansk_gris.jpg" alt="Fisk Vegansk Gris Opskrift">
+    </div>
+    <div class="recipe" data-tags="fisk spicy fjerkræ">
+      <img src="fisk_spicy_fjerkræ.jpg" alt="Fisk Spicy Fjerkræ Opskrift">
+    </div>
+    <div class="recipe" data-tags="fisk koed populære">
+      <img src="fisk_koed_populaere.jpg" alt="Fisk Kød Populær Opskrift">
+    </div>
+
+    <!-- HURTIGT -->
+    <div class="recipe" data-tags="hurtigt vegansk fjerkræ">
+      <img src="hurtigt_vegansk_fjerkræ.jpg" alt="Hurtigt Vegansk Fjerkræ Opskrift">
+    </div>
+    <div class="recipe" data-tags="hurtigt koed gris">
+      <img src="hurtigt_koed_gris.jpg" alt="Hurtigt Kød Gris Opskrift">
+    </div>
+    <div class="recipe" data-tags="hurtigt spicy fisk">
+      <img src="hurtigt_spicy_fisk.jpg" alt="Hurtigt Spicy Fisk Opskrift">
+    </div>
+    <div class="recipe" data-tags="hurtigt fisk populære">
+      <img src="hurtigt_fisk_populaere.jpg" alt="Hurtigt Fisk Populær Opskrift">
+    </div>
+
+    <!-- FJERKRÆ -->
+    <div class="recipe" data-tags="fjerkrae hurtigt vegansk">
+      <img src="fjerkrae_hurtigt_vegansk.jpg" alt="Fjerkræ Hurtigt Vegansk Opskrift">
+    </div>
+    <div class="recipe" data-tags="fjerkrae fisk populære">
+      <img src="fjerkrae_fisk_populaere.jpg" alt="Fjerkræ Fisk Populær Opskrift">
+    </div>
+    <div class="recipe" data-tags="fjerkrae vegansk spicy">
+      <img src="fjerkrae_vegansk_spicy.jpg" alt="Fjerkræ Vegansk Spicy Opskrift">
+    </div>
+    <div class="recipe" data-tags="fjerkrae spicy populære">
+      <img src="fjerkrae_spicy_populaere.jpg" alt="Fjerkræ Spicy Populær Opskrift">
+    </div>
+
+    <!-- KØD -->
+    <div class="recipe" data-tags="koed spicy fisk">
+      <img src="koed_spicy_fisk.jpg" alt="Kød Spicy Fisk Opskrift">
+    </div>
+    <div class="recipe" data-tags="koed hurtigt populære">
+      <img src="koed_hurtigt_populaere.jpg" alt="Kød Hurtig Populær Opskrift">
+    </div>
+    <div class="recipe" data-tags="koed vegansk gris">
+      <img src="koed_vegansk_gris.jpg" alt="Kød Vegansk Gris Opskrift">
+    </div>
+    <div class="recipe" data-tags="koed fisk populære">
+      <img src="koed_fisk_populaere.jpg" alt="Kød Fisk Populær Opskrift">
+    </div>
+
+    <!-- GRIS -->
+    <div class="recipe" data-tags="gris fisk spicy">
+      <img src="gris_fisk_spicy.jpg" alt="Gris Fisk Spicy Opskrift">
+    </div>
+    <div class="recipe" data-tags="gris vegansk hurtigt">
+      <img src="gris_vegansk_hurtigt.jpg" alt="Gris Vegansk Hurtigt Opskrift">
+    </div>
+    <div class="recipe" data-tags="gris spicy koed">
+      <img src="gris_spicy_koed.jpg" alt="Gris Spicy Kød Opskrift">
+    </div>
+    <div class="recipe" data-tags="gris koed populære">
+      <img src="gris_koed_populaere.jpg" alt="Gris Kød Populær Opskrift">
+    </div>
+
+    <!-- POPULÆRE -->
+    <div class="recipe" data-tags="populaere fisk koed">
+      <img src="populaere_fisk_koed.jpg" alt="Populære Fisk Kød Opskrift">
+    </div>
+    <div class="recipe" data-tags="populaere spicy vegansk">
+      <img src="populaere_spicy_vegansk.jpg" alt="Populære Spicy Vegansk Opskrift">
+    </div>
+    <div class="recipe" data-tags="populaere hurtigt gris">
+      <img src="populaere_hurtigt_gris.jpg" alt="Populære Hurtigt Gris Opskrift">
+    </div>
+    <div class="recipe" data-tags="populaere fisk vegansk">
+      <img src="populaere_fisk_vegansk.jpg" alt="Populære Fisk Vegansk Opskrift">
+    </div>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

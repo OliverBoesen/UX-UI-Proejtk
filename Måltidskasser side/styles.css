@@ -1,0 +1,253 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #ebe8df;
+
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 30px 100px 3px 100px;
+  border: 1px black solid;
+  border-radius: 5px;
+}
+
+.broed-menu img {
+  max-width: 100%;
+
+}
+
+.overskrift-pris {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.overskrift-pris h1 {
+  font-size: 20px;
+  margin-bottom: 70px;
+}
+
+.section {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.section h2 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+.person-buttons,
+.dish-buttons {
+  display: flex;
+  gap: 10px;
+  margin-left: 10px;
+}
+
+.person-buttons button,
+.dish-buttons button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 2px #e94325 solid;
+  cursor: pointer;
+  background-color: white;
+  color: #e94325;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.person-buttons button.active,
+.dish-buttons button.active {
+  background-color: #e94325;
+  color: white;
+}
+
+.total-container {
+  border: black 1px solid;
+  border-bottom: none;
+}
+
+.total-container h2 {
+  margin: 15px 0 15px 15px;
+  font-size: 20px;
+  padding-left: 10px;
+}
+
+
+#price-description {
+  margin: 15px;
+  padding-left: 10px;
+}
+
+.pris-linje {
+  border-bottom: 1px black solid;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.fragt-pris {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px;
+  padding-left: 10px;
+}
+
+.pris-uden-fragt {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px;
+  padding-left: 10px;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(168, 168, 168);
+  border: black 1px solid;
+  border-top: none;
+  margin-top: -15px;
+}
+
+.total p {
+  font-size: 20px;
+  margin: 15px;
+  padding-left: 10px;
+}
+
+.total span {
+  font-weight: bold;
+}
+
+.videre-knap {
+display: flex;
+justify-content: center;
+border: #da2100 2px solid;
+border-radius: 5px;
+text-align: center;
+margin: 15px auto 0 auto;
+width: 250px;
+font-weight: bold;
+background-color: #e94325;
+cursor: pointer;
+}
+
+.videre-knap a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.videre-knap a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.videre-knap:hover {
+  background-color: #da2100;
+}
+
+.obs-opskrift {
+  text-align: center;
+  margin-top: 70px;
+  font-size: 15px;
+}
+
+/* Pris udregner færidg */ 
+
+
+
+
+.filter-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 20px;
+  background-color: none;
+  margin-top: 40px;
+}
+
+.filter-btn {
+  padding: 8px;
+  width: 30%;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  background-color: #ebe8df;
+}
+
+.filter-btn:hover {
+  top: -5px;
+  position: relative;
+}
+
+.filter-btn.active {
+  background-color: white;
+  color: white;
+  border-radius: 100px;
+}
+
+.filter-btn img {
+  width: 70%;
+  height: auto;
+  
+}
+
+.selected-filters {
+  margin-bottom: 10px;
+}
+
+.selected-filters img {
+  max-width: 20%;
+  margin: 0;
+}
+
+.selected-filters .selected-filter {
+  display: inline-block;
+  padding: 5px 5px;
+  margin-right: 1px;
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  max-width: 100px;
+  
+}
+
+.recipe-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.recipe {
+  width: calc(25% - 20px);
+  margin: 10px;
+  position: relative;
+}
+
+.recipe img {
+  width: 70%;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.reset-btn {
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #e94325;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  border: 2px solid #e94325;
+  margin: 25px;
+  padding: 2px 15px;
+  text-decoration: none;
+}
+
+.reset-btn:hover {
+  color: white;
+  background-color: #da2100;
+}

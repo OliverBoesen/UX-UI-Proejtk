@@ -1,0 +1,114 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: aquamarine;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 100px;
+}
+
+.overskrift-pris {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.overskrift-pris h1 {
+  font-size: 20px;
+  margin-bottom: 70px;
+}
+
+.section {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.section h2 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+.person-buttons,
+.dish-buttons {
+  display: flex;
+  gap: 10px;
+  margin-left: 10px;
+}
+
+.person-buttons button,
+.dish-buttons button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 2px #e94325 solid;
+  cursor: pointer;
+  background-color: white;
+  color: #e94325;
+}
+
+.person-buttons button.active,
+.dish-buttons button.active {
+  background-color: #e94325;
+  color: white;
+}
+
+.total-container {
+  border: black 1px solid;
+  border-bottom: none;
+}
+
+.total-container h2 {
+  margin: 15px 0 15px 15px;
+  font-size: 20px;
+  padding-left: 10px;
+}
+
+
+#price-description {
+  margin: 15px;
+  padding-left: 10px;
+}
+
+.pris-linje {
+  border-bottom: 1px black solid;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.fragt-pris {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px;
+  padding-left: 10px;
+}
+
+.pris-uden-fragt {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px;
+  padding-left: 10px;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(168, 168, 168);
+  border: black 1px solid;
+  border-top: none;
+  margin-top: -15px;
+}
+
+.total p {
+  font-size: 20px;
+  margin: 15px;
+  padding-left: 10px;
+}
+
+.total span {
+  font-weight: bold;
+}
