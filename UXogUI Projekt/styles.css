@@ -96,7 +96,7 @@ body {
 .banner-image {
     position: relative;
     width: 100%;
-    height: 600px;
+    height: 630px;
     overflow: hidden;
     z-index: -1;
 }
@@ -114,6 +114,12 @@ body {
     text-align: center;
     color: black;
 }
+#Bannertitle{
+text-align: center;
+font-weight: bold;
+font-size: 30px;
+}
+
 
 
 .banner-text .btn {
@@ -179,6 +185,7 @@ body {
     color: red;
 }
 
+
 /* Next & previous buttons */
 .prev, .next {
     cursor: pointer;
@@ -205,7 +212,25 @@ body {
     left: 15rem;
     border-radius: 1px 0 0 1px;
   }
-  
+  #img-link {
+    display: inline-block;
+    
+    padding: 10px 50px;
+    text-decoration: none;
+    background-color: transparent;
+    border: #e94325 solid;
+    color:#e94325 ;
+    font-weight: bold;
+    border-style: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#img-link:hover {
+    background-color: #e94325;
+    color: #fff;
+}
    
   /* On hover, add a black background color with a little bit see-through */
   .prev:hover, .next:hover {
@@ -223,7 +248,7 @@ font-size: 30px;
 display: block;
 margin: 10rem auto;
 width: 50%;
-margin-bottom: 35px;
+margin-bottom: 50px;
 }
 .container {
     display: flex;
@@ -274,7 +299,7 @@ text-align: center;
 }
 .recipe-section {
     text-align: center;
-    margin-bottom: 50px; /* Juster efter behov */
+    margin-bottom: 120px; /* Juster efter behov */
 }
 
 .recipe-section h2 {
@@ -299,8 +324,6 @@ text-align: center;
     border-radius: 5px;
 }
 
-
-
 .recipe-item button {
     position: absolute; /* Gør knappen absolut positioneret */
     bottom: -60px; /* Juster denne værdi for at placere knappen under billedet */
@@ -323,3 +346,218 @@ text-align: center;
     color: #fff;
 }
 
+.footer {
+    background-color: #FFE5B3;
+    color: black;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact, .socials {
+    flex: 1;
+}
+
+.socials{
+margin-left: 4rem;
+}
+
+.contact h3, .socials h3 {
+    margin-bottom: 10px;
+}
+
+.contact{
+margin-left:5rem;
+
+
+}
+.contact ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact ul li {
+    margin-bottom: 5px;
+}
+
+.logo {
+    flex: 1;
+    text-align: center;
+    margin-right: 2rem;
+}
+
+.logo img {
+    max-width: 150px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+
+/*wrap*/
+.ko-form-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  /*content*/
+  .ko-container {
+    max-width: 60%;
+    margin: 6rem 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 1rem;
+    height: 45rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  }
+  
+  
+  .ko-form-box {
+    flex: 1;
+    padding: 20px;
+    max-width: 100%; 
+    margin-bottom: 1rem;
+    color: black;
+  }
+  
+  .ko-form-box h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .ko-form-box p {
+    margin-bottom: 1rem;
+  }
+  
+  .ko-form-box a {
+    color: black;
+  }
+  
+  .ko-form-group input{
+    width: 100%;
+    box-sizing: border-box;
+    border: solid;
+    border-width: 1px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 10px; 
+    background-color: #EBE8DF;
+    height: 2.5rem; 
+  }
+  .ko-form-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: solid;
+    border-width: 1px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 10px; 
+    height: 6rem; 
+    resize: none;
+    background-color: #EBE8DF;
+  }
+  
+  .ko-form-group button {
+    display: inline-block;
+    margin-bottom: 4.5rem;
+    padding: 10px 70px;
+    background-color:#e94325 ; /* Gør baggrund gennemsigtig */
+    color: #ebe8df; /* Tekstfarve */
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid #e94325; /* Tilføj en rød kant */
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s; /* Tilføj transition for farveændring */
+    cursor: pointer; /* Gør markøren til en hånd, når den er over knappen */
+  }
+  
+  .ko-form-group button:hover{
+    background-color: #DA2100; /* Baggrundsfarve ved hover */
+    color: #fff; /* Ændre tekstfarve ved hover */
+
+
+  }
+  
+  .ko-image-box-kontakt img {
+    max-width: 100%;
+    height: auto;
+    margin-left: 0;
+    margin-top: 15px; 
+    border: #000 solid 3px;
+    border-radius: 10px;
+  }
+  
+  .fill-fields-text {
+    display: none;
+    color: red;
+    font-weight: bold; /* Gør teksten fed */
+}
+.confirmation-text{
+    font-weight: bold;
+}
+
+/* Kontakt side start */
+
+.kontakt-overskrift {
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .faq-top-tekst {
+  display: flex;
+  margin: 0 auto;
+  max-width: 400px;
+  justify-content: space-around;
+  }
+  
+  .oftestillesporsmaal h2 {
+    text-align: center;
+  }
+  
+  .faq-top-tekst li {
+    color: #e94325;
+    margin-left: -2rem;
+  }
+  
+  .faq-top-tekst p {
+    color: black;
+  }
+  
+  .kontakt-gaa-til-faq-knap {
+    background-color: #e94325;
+    text-align: center;
+    max-width: 100px;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 5px;
+  }
+  
+  .kontakt-gaa-til-faq-knap a {
+    color: white;
+    text-decoration: none;
+    max-width: 100px;
+    }
+  
+    .kontakt-gaa-til-faq {
+      display: block;
+      margin: 0 auto;
+      padding: 10px 50px;
+      background-color: #e94325;
+      color: #ebe8df;
+      text-decoration: none;
+      border-radius: 5px;
+      max-width: 80px;
+      font-weight: bold;
+  }
+  
+  .kontakt-gaa-til-faq:hover {
+    background-color: #da2100;
+    color: white;
+  }
+  
+  /* Kontakt side slut */
