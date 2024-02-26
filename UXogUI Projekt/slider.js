@@ -25,14 +25,14 @@ function sliderShiftNova(i){
         imageCountNova2[1].style.opacity = "1";
         imageCountNova2[2].style.opacity = "0.4";
         imageCountNova2[4].style.opacity = "0.4";
-        changeText.innerText = "To sorry world an at do spoil along. Incommode he depending do frankness remainder to. Edward day almost active him friend thirty piqued. People as period twenty my extent as. Set was better abroad ham plenty secure had horses. "
+        changeText.innerText = "Udforsk hvem vi er og hvem der står bag Nippon.  "
     } else if (indexNova == 1)
     {
         changeLink.setAttribute("href", "index4.html")
         imageCountNova2[1].style.opacity = "0.4";
     imageCountNova2[2].style.opacity = "1";
     imageCountNova2[3].style.opacity = "0.4";
-        changeText.innerText = "John draw real poor on call my from. May she mrs furnished discourse extremely. Ask doubt noisy shade guest did built her him. Ignorant repeated hastened it do. Consider bachelor he yourself expenses no. "
+        changeText.innerText = "Kontakt Nippon og få svar på alt hvad du er i tivle om. "
     }
     else if (indexNova == 2)
     {
@@ -40,7 +40,7 @@ function sliderShiftNova(i){
         imageCountNova2[2].style.opacity = "0.4";
         imageCountNova2[3].style.opacity = "1";
         imageCountNova2[4].style.opacity = "0.4";
-        changeText.innerText = "Kept in sent gave feel will oh it we. Has pleasure procured men laughing shutters nay. Old insipidity motionless continuing law shy partiality. Depending acuteness dependent eat use dejection."
+        changeText.innerText = "Få svar på de mest stillede spørgsmål, som vi får"
     }
     else if (indexNova == 3)
     {
@@ -48,7 +48,7 @@ function sliderShiftNova(i){
         imageCountNova2[3].style.opacity = "0.4";
         imageCountNova2[4].style.opacity = "1";
         imageCountNova2[5].style.opacity = "0.4";
-        changeText.innerText = "Unwilling sportsmen he in questions september therefore described so. Attacks may set few believe moments was. Reasonably how possession shy way introduced age inquietude. Missed he engage no exeter of."
+        changeText.innerText = "Kig alle vores lækre opskrifter igennem."
     }
 } 
 
