@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIPPON | Kontakt</title>
+ <!-- Link til css -->
+ <link rel="stylesheet" href="styles.css">
+ <!-- Link til fane icon-->
+ <link rel="icon" href="img/Lolo.ico" type="image/x-icon">
+ <link rel="shortcut icon" href="img/Lolo.ico" type="image/x-icon">
+ <!-- Font -->
+ <!--Font til overskrifter -->
+ <link href='https://fonts.googleapis.com/css?family=RocknRoll One' rel='stylesheet'>
+ <!-- Font til brødtekst -->
+ <link href='https://fonts.googleapis.com/css?family=Noto Sans' rel='stylesheet'>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-inner">
+            <ul class="navbar-menu">
+                <li>
+                    <a href="maaltidskasser.html">Måltidskasser</a>
+                </li>
+                <li class="dropdown">
+                    <a href="underarbejde.html">Det Japanske køkken ▼</a>
+                    <div class="dropdown-content">
+                        <a href="underarbejde.html">Opskrifter</a>
+                    </div>
+                </li>
+            </ul>
+            <a href="index.html"><img src="img/logo.gif" alt="Logo" class="navbar-logo"></a>
+            <ul class="navbar-menu">
+                <li class="dropdown">
+                    <a href="underarbejde.html">Om os ▼</a>
+                    <div class="dropdown-content">
+                        <a href="underarbejde.html">FAQ</a>
+                    </div>
+                </li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Ofte stillede spørgsmål-->
+    <div class="kontakt-toptekst-container">
+        <div class="oftestillesporsmaal">
+            <h2>Ofte stillede spørgsmål</h2>
+        </div>
+    <div class="faq-top-tekst">
+        <ul>
+           <li><p>Hvordan bestiller/redigerer jeg en ordre?</p></li>
+           <li><p>Hvad hvis jeg ikke er tilfreds med kvaliteten?</p></li>
+           <li><p>Jeg har glemt mit password - hvad gør jeg?</p></li>
+        </ul>
+        <ul>
+           <li><p>Jeg modtog ikke det jeg bestilte - hvad gør jeg? </p></li>
+           <li><p>Hvilke køkkenredskaber skal jeg have derhjemme?</p></li>
+           <li><p>Kan jeg ændre min leveringsadresse?</p></li>
+        </ul>
+    </div>
+    <a href="underarbejde.html" class="kontakt-gaa-til-faq">Gå til FAQ</a>
+
+    <!-- Kontakt form-->
+    <section class="ko-form-wrapper">
+        <div class="ko-container">
+            <div class="ko-form-box">
+                <h2>Kontakt os</h2>
+                <p>Hvis du oplever problemer med formularen er du altid velkommen til at sende os en personlig mail. <a
+                        href="mailto:deltabox.wave@gmail.com"></a>kontakt@nippon.com</p>
+                <div class="ko-form-group">
+                    <label for="name">Navn</label>
+                    <input type="text" id="name" name="name" required placeholder="Dit navn">
+                </div>
+                <div class="ko-form-group">
+                    <label for="email">Din Email</label>
+                    <input type="email" id="email" name="email" required placeholder="dinemail@email.com">
+                </div>
+                <div class="ko-form-group">
+                    <label for="emne">Telefon</label>
+                    <input type="text" id="emne" name="emne" required placeholder="Dit telefonnummer">
+                </div>
+                <div class="ko-form-group">
+                    <label for="message">Besked</label>
+                    <textarea id="message" name="message" required placeholder="Skriv din besked her..."></textarea>
+                </div>
+                <div class="ko-form-group">
+                    <button type="submit" class="send-button">Send</button>
+                </div>
+                <div class="ko-form-group">
+                    <div class="fill-fields-text" style="display: none; color: red;">Udfyld venligst alle felter.</div>
+                    <div class="confirmation-text" style="display: none;">Tak for din indmeldelse!</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="contact">
+            <h3>Kontakt</h3>
+            <ul>
+                <li>Email: kontakt@nippon.com</li>
+                <li>Tlf: +1234567890</li>
+                <li>Lokation: Aarhus C, Danmark</li>
+            </ul>
+        </div>
+        <div class="logo">
+            <img src="img/LOGOfooter.png" alt="Footer Logo">
+        </div>
+        <div class="socials">
+            <h3>Socials</h3>
+            <div class="social-icons">
+                <img src="img/facebook-logo-farve.png" alt="Facebook">
+                <img src="img/instagram-logo.png" alt="Instagram">
+            </div>
+        </div>
+    </footer>
+</div>
+<!-- Link til script-->
+   <script src="Kontakt-java.js"></script>
+</body>
+</html>

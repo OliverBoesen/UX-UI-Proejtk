@@ -1,0 +1,899 @@
+/* Generel styling start */
+body {
+  font-family: 'Noto Sans';
+  margin: 0;
+  padding: 0;
+  background-color: #ebe8df;
+
+}
+
+/* Nav bar start */
+.navbar {
+  background-color: #ebe8df;
+  box-shadow: 10px 1px 6px 13px rgba(0, 0, 0, 0.5); /* Juster skyggen efter behov */
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.navbar-inner {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1px 1px;
+}
+
+.navbar-logo {
+  max-width: 125px;
+  margin-right: 12rem;
+}
+
+.navbar-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-menu li {
+  margin: 0 10px;
+}
+
+.navbar-menu li a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+.navbar-menu li {
+  position: relative;
+}
+
+.navbar-menu li a {
+  position: relative;
+  color: #333;
+  text-decoration: none;
+}
+
+.navbar-menu li a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #e94325 ;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
+}
+
+.navbar-menu li a:hover::after {
+  width: 100%;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Nav bar slut */
+
+
+
+/* Footer start */
+
+.footer {
+  background-color: #FFE5B3;
+  color: black;
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 4px 1px 6px 7px rgba(0, 0, 0, 0.2);
+}
+
+.contact, .socials {
+  flex: 1;
+}
+
+.socials{
+margin-left: 4rem;
+}
+
+.contact h3, .socials h3 {
+  margin-bottom: 10px;
+  font-family: 'RocknRoll one';
+}
+
+.contact{
+margin-left:5rem;
+
+
+}
+.contact ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact ul li {
+  margin-bottom: 5px;
+}
+
+.logo {
+  flex: 1;
+  text-align: center;
+  margin-right: 2rem;
+}
+
+.logo img {
+  max-width: 150px;
+}
+
+.social-icons img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+/* Footer slut */
+
+/* Generel styling Slut */
+
+/* Forside start */
+
+.banner-image {
+  position: relative;
+  width: 100%;
+  height: 630px;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.banner-image img {
+  width: 100%;
+  height: auto;
+}
+
+.banner-text {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: black;
+}
+#Bannertitle{
+text-align: center;
+font-weight: bold;
+font-size: 30px;
+}
+
+.banner-text .btn {
+  display: inline-block;
+  margin-bottom: 4.5rem;
+  padding: 10px 70px;
+  background-color:#e94325 ;
+  color: #ebe8df;
+  text-decoration: none;
+  font-style: bold;
+  border: 2px solid #e94325; 
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+  cursor: pointer;
+}
+
+.banner-text .btn:hover {
+  background-color: #DA2100; 
+  color: #fff;
+}
+
+.img-text {
+  font-size: small;
+  text-align: center;
+  overflow-wrap: break-word;
+  margin: auto;
+  width: 15%;      
+}
+
+.img-slider {
+  padding: 2rem;
+  position: relative;
+}
+
+.slider-wrapper {
+  width: calc(60% - 50px);
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.img-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.img-container img {
+  display: flex;
+  width: calc(90% / 3);
+  margin-right: 2%;
+  margin-left: 2%;
+  object-fit: cover;
+  max-height: 550px;
+}
+
+.img-slider button {
+  margin: 0;
+  padding: 0;
+  background-color: #e94325;
+  border: none;
+  outline: none;
+  font-size: 30px;
+  color: red;
+}
+
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: #e94325;
+  font-weight: bold;
+  font-size: 40px;
+  transition: 0.6s ease;
+  border-radius: 0 1px 1px 0;
+  user-select: none;
+}
+ 
+/* Position the "next button" to the right */
+.next {
+  right: 15rem;
+  border-radius: 1px 0 0 1px;
+}
+
+.prev {
+  left: 15rem;
+  border-radius: 1px 0 0 1px;
+}
+#img-link {
+  display: inline-block;
+  padding: 10px 50px;
+  text-decoration: none;
+  background-color: transparent;
+  border: #e94325 solid;
+  color:#e94325 ;
+  font-weight: bold;
+  border-style: 2px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#img-link:hover {
+  background-color: #e94325;
+  color: #fff;
+}
+ 
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.1);
+}
+
+.img-title{
+text-align: center;
+margin-top: 3rem;
+font-size: 30px;
+
+}
+
+#infog{
+display: block;
+margin: 6rem auto;
+width: 50%;
+margin-bottom: 50px;
+}
+
+.forside-container {
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+.image,
+.content {
+  flex: 1;
+  text-align: center;
+}
+
+.image img {
+  margin-top: 5rem;
+  margin-left: 15rem;
+  max-width: 35%;
+  height: auto;
+}
+
+.content h2 {
+  max-width: 28rem;
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-family: 'RocknRoll one';
+}
+
+.content p {
+  max-width: 28rem;
+  margin-bottom: 3rem;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+
+.divider {
+  border: none;
+  height: 2px;
+  background-color: #ccc;
+  width: 100%;
+  margin-top: 50px; 
+  margin-bottom: 50px; 
+}
+
+#overskrift3{
+text-align: center;
+
+
+}
+.recipe-section {
+  text-align: center;
+  margin-bottom: 120px; 
+}
+
+.recipe-section h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-family: 'RocknRoll one';
+}
+
+.recipe-gallery {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.recipe-item {
+  margin: 20px 1px;
+  margin-bottom: 100px;
+  position: relative;
+}
+
+.recipe-item img {
+  width: 200px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.recipe-item a {
+  position: absolute; 
+  bottom: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 8px 40px;
+  background-color: transparent;
+  border: #e94325 solid;
+  color:#e94325 ;
+  font-weight: bold;
+  border-style: 2px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.recipe-item a:hover {
+  background-color: #e94325;
+  color: #fff;
+}
+
+
+/* Forside Slut */
+
+
+/* Under arbejde side start */
+
+.underarbejde {
+  text-align: center;
+}
+
+.underarbejde img {
+max-width: 40rem;
+margin: 0 auto;
+display: block;
+animation: tilt-shaking 1.5s infinite;
+}
+
+
+@keyframes tilt-shaking { /* Animtaion til fisken på under arbejde siden */
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }
+  50% { transform: rotate(0eg); }
+  75% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
+}
+
+/* Under arbejde side slut */
+
+
+/* Måltidskasser side start */
+
+.container {
+  max-width: 600px;
+  margin: 35px auto;
+  background-color: white;
+  padding: 30px 100px 3px 100px;
+  border: 1px black solid;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+
+/* Pris udregner start*/ 
+
+.broed-menu img {
+  max-width: 100%;
+}
+
+.overskrift-pris {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.overskrift-pris h1 {
+  font-size: 25px;
+  margin-bottom: 70px;
+  font-family: 'RocknRoll one';
+}
+
+/* Valg af antal personer og retter */
+
+.section {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.section h2 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: lighter;
+  font-family: 'RocknRoll one';
+}
+
+.person-buttons,
+.dish-buttons {
+  display: flex;
+  gap: 10px;
+  margin-left: 10px;
+}
+
+.person-buttons button,
+.dish-buttons button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 2px #e94325 solid;
+  cursor: pointer;
+  background-color: white;
+  color: #e94325;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.person-buttons button.active,
+.dish-buttons button.active {
+  background-color: #e94325;
+  color: white;
+}
+
+/* Pris viser */
+
+.total-container {
+  border: black 1px solid;
+  border-bottom: none;
+}
+
+.total-container h2 {
+  margin: 15px 0 15px 15px;
+  font-size: 20px;
+  padding-left: 10px;
+  font-family: 'RocknRoll one';
+}
+
+
+#price-description {
+  margin: 15px;
+  padding-left: 10px;
+}
+
+.pris-linje {
+  border-bottom: 1px black solid;
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Fragt prisen */
+
+.fragt-pris {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px;
+  padding-left: 10px;
+}
+
+/* Pris uden fragt */
+
+.pris-uden-fragt {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px;
+  padding-left: 10px;
+}
+
+/* Den totale pris */
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(168, 168, 168);
+  border: black 1px solid;
+  border-top: none;
+  margin-top: -15px;
+}
+
+.total p {
+  font-size: 20px;
+  margin: 15px;
+  padding-left: 10px;
+}
+
+.total span {
+  font-weight: bold;
+}
+
+/* Videre knap - der fører til "Under arbejde" side */
+
+.videre-knap {
+display: flex;
+justify-content: center;
+border: #da2100 2px solid;
+border-radius: 5px;
+text-align: center;
+margin: 15px auto 0 auto;
+width: 250px;
+font-weight: bold;
+background-color: #e94325;
+cursor: pointer;
+}
+
+.videre-knap a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.videre-knap a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.videre-knap:hover {
+  background-color: #da2100;
+}
+
+/* OBS skrift under total pris */
+
+.obs-opskrift {
+  text-align: center;
+  margin-top: 70px;
+  font-size: 15px;
+}
+
+/* Pris udregner færdig */ 
+
+
+/* Filter system start */
+
+.filter-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 20px;
+  background-color: none;
+  margin-top: 40px;
+}
+
+/* Filter iconer - man kan trykke på */
+
+.filter-btn {
+  padding: 8px;
+  width: 30%;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  background-color: #ebe8df;
+}
+
+.filter-btn:hover {
+  top: -5px;
+  position: relative;
+}
+
+.filter-btn.active {
+  background-color: white;
+  color: white;
+  border-radius: 100px;
+}
+
+.filter-btn img {
+  width: 70%;
+  height: auto;
+  
+}
+
+/* Reset filter knap */
+
+.reset-btn {
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #e94325;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  border: 2px solid #e94325;
+  margin: 25px;
+  padding: 2px 15px;
+  text-decoration: none;
+}
+
+.reset-btn:hover {
+  color: white;
+  background-color: #da2100;
+}
+
+/* Valgte filtre/iconer */
+
+.selected-filters {
+  margin-bottom: 10px;
+}
+
+.selected-filters img {
+  max-width: 20%;
+  margin: 0;
+}
+
+.selected-filters .selected-filter {
+  display: inline-block;
+  padding: 5px 5px;
+  margin-right: 1px;
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  max-width: 100px;
+  
+}
+
+/* Opskrifter - Billeder - fører til "under arbejde" side */
+
+.recipe-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.recipe {
+  width: calc(25% - 20px);
+  margin: 10px;
+  position: relative;
+}
+
+.recipe img {
+  width: 70%;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Filter system slut */
+
+/* Måltidskasser side slut */
+
+/* Kontakt side start */
+
+.kontakt-overskrift {
+  text-align: center;
+  font-weight: bold;
+}
+
+.faq-top-tekst {
+display: flex;
+margin: 0 auto;
+max-width: 600px;
+justify-content: space-between;
+}
+
+.oftestillesporsmaal h2 {
+  text-align: center;
+  font-family: 'RocknRoll one';
+}
+
+.faq-top-tekst li {
+  color: #e94325;
+  margin-left: -2rem;
+}
+
+.faq-top-tekst p {
+  color: black;
+}
+
+/* Kontakt side start */
+
+.kontakt-gaa-til-faq-knap {
+  background-color: #e94325;
+  text-align: center;
+  max-width: 100px;
+  padding: 10px;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+.kontakt-gaa-til-faq-knap a {
+  color: white;
+  text-decoration: none;
+  max-width: 100px;
+  }
+
+  .kontakt-gaa-til-faq {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 50px;
+    background-color: #e94325;
+    color: #ebe8df;
+    text-decoration: none;
+    border-radius: 5px;
+    max-width: 80px;
+    font-weight: bold;
+}
+
+.kontakt-gaa-til-faq:hover {
+  background-color: #da2100;
+  color: white;
+}
+
+.ko-form-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/*content*/
+.ko-container {
+  max-width: 60%;
+  margin: 6rem 1rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 1rem;
+  height: 45rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  border: 1px black solid;
+  border-radius: 5px;
+}
+
+
+.ko-form-box {
+  flex: 1;
+  padding: 20px;
+  max-width: 100%; 
+  margin-bottom: 1rem;
+  color: black;
+}
+
+.ko-form-box h2 {
+  margin-bottom: 1rem;
+  font-family: 'RocknRoll one';
+}
+
+.ko-form-box p {
+  margin-bottom: 1rem;
+}
+
+.ko-form-box a {
+  color: black;
+}
+
+.ko-form-group input{
+  width: 100%;
+  box-sizing: border-box;
+  border: solid;
+  border-width: 1px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 10px; 
+  background-color: #EBE8DF;
+  height: 2.5rem; 
+}
+.ko-form-group textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: solid;
+  border-width: 1px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 10px; 
+  height: 6rem; 
+  resize: none;
+  background-color: #EBE8DF;
+}
+
+.ko-form-group button {
+  display: inline-block;
+  margin-bottom: 4.5rem;
+  padding: 10px 70px;
+  background-color:#e94325 ; 
+  color: #ebe8df;
+  text-decoration: none;
+  font-weight: bold;
+  border: 2px solid #e94325; 
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+  cursor: pointer;
+}
+
+.ko-form-group button:hover{
+  background-color: #DA2100;
+  color: #fff; 
+
+
+}
+
+.ko-image-box-kontakt img {
+  max-width: 100%;
+  height: auto;
+  margin-left: 0;
+  margin-top: 15px; 
+  border: #000 solid 3px;
+  border-radius: 10px;
+}
+
+.fill-fields-text {
+  display: none;
+  color: red;
+  font-weight: bold; 
+}
+.confirmation-text{
+  font-weight: bold;
+}
+
+
+
+.kontakt-overskrift {
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Kontakt side slut */
